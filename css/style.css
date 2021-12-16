@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    margin: 2rem auto;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.main{
+    height: 900px;
+    width: 720px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px ;
+    background-color: rgb(236, 233, 233);
+    box-shadow: 0px 10px 25px 0px ;
+}
+
+.main .left{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 0.5px solid; */
+
+}
+
+.main .left .candidate{
+    width: 80%;
+    height: 14vh ;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 5px 0px; */
+    background-color: white;
+
+}
+
+.main .right {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .right .right_div{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.main .right .right_div .light{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.main .right .right_div .btn{
+    display: block;
+    width: 80px;
+    padding: 10px 12px;
+    border-radius: 1.5rem;
+    outline-color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s;
+
+}
