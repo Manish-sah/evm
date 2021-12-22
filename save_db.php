@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if(isset($_SESSION['username']))
+{
+    header("location:index.php");
+}
+
 
 include "connection.php";
 
@@ -23,21 +30,17 @@ if (isset($_POST['submit'])) {
     while ($row = $result->fetch_assoc()) {
         if ($row['email'] == $email && $row['adhar'] == $adhar) {
             $check = true;
-?>
+    ?>
             <script>
                 alert("Already Register! \nTry Again...");
-                location.assign("login.html");
+                location.assign("login.php");
             </script>
 
-            <?php
+        <?php
 
 
-        } 
-           
+        }
     }
-
-
-
 
 
 
@@ -47,22 +50,20 @@ if (isset($_POST['submit'])) {
 
         $result = mysqli_query($connection, $sql);
 
-        if ($result)
-          {
-            ?>
+        if ($result) {
+        ?>
 
             <script>
                 alert("Congratulations!\nYour Registration Successfully completed.");
-                location.assign("login.html");
+                location.assign("login.php");
             </script>
 
         <?php
-          }
-        else {
-    ?>
+        } else {
+        ?>
 
             <script>
-                location.assign("register.html");
+                location.assign("register.php");
             </script>
 
         <?php
@@ -72,7 +73,7 @@ if (isset($_POST['submit'])) {
         ?>
 
         <script>
-            location.assign("register.html");
+            location.assign("register.php");
         </script>
 
 <?php

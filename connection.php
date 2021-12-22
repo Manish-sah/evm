@@ -1,12 +1,15 @@
-<?php 
+<?php
 
 $server = "localhost";
 $username = "root";
 $password = "";
 $database = "evm_db";
 
+try {
 
-$connection = mysqli_connect($server,$username , $password,$database);
-
-// if($connection)
-// echo "connecting...";
+    if (!$connection = mysqli_connect($server, $username, $password, $database)) {
+        die("unable to connect!");
+    }
+} catch (Exception $e) {
+    echo "info wrong";
+}

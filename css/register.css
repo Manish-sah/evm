@@ -9,19 +9,24 @@ body{
     width: 100%;
     background: linear-gradient(20deg,rgb(177, 47, 194),rgb(29, 158, 25));
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     
 }
 
 .main{
-    width: 400px;
-    /* height: 500px; */
-    padding: 10px;
+    width: 360px;
+    min-height: 300px;
     margin: auto;
-    margin-top: 100px;
-    border: 1px solid rgb(255, 255, 255);
-    /* background: red; */
     box-shadow: 0px 10px 20px 0px rgb(0, 0, 0,30%);
+    background-color: #811f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .main .headingWalaDiv{
@@ -30,53 +35,48 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: silver;
 
 }
 
 .main .formWalaDiv{
-    width: 100%;
-    padding: 0.4rem;
-    margin: 1rem auto;
-    
+    width: 100%;    
 
 }
 
 .main .formWalaDiv form{
     width: 100%;
     height: 100%;
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: transparent;
 }
 
 .main .formWalaDiv form input, button{
-    width: 90%;
-    padding: 0.7rem 1rem ;
-    margin: 0.5rem auto ;
-    border-radius: 3px;
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    border-radius: 2px;
     outline: none;
     border-width: 0.5px;
-    background-color: transparent;
     box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,30%);
-    border-color: white;
-    color: black;
-    font-weight: bold;
+    background-color: silver;
 
 }
 
 .main .formWalaDiv form button{
-   background-color: lightslategray;
-   color: rgb(255, 255, 255);
+   background-color: black;
+   color: silver;
    font-size: 1rem;
-
+   text-transform: capitalize;
 
 }
 
 .main .formWalaDiv form a{
     padding: 0.4rem 0.8rem;
     margin: 1rem auto;
+    color: silver;
     
 }
